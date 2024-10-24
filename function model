@@ -1,0 +1,14 @@
+#include<stdio.h>
+void raj(int n) {
+    for (int i=1;i<20;i++) {
+        if (i%n==4) {
+            return;
+        } else {
+            printf("hai\n");
+        }
+    }
+    printf("are u ok?\n");
+}
+void main() {
+    raj(4);
+}
