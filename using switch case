@@ -1,0 +1,49 @@
+#include<stdio.h>
+void areaofcircle(int r){
+    printf("area of circle %d",3.14*r);
+}
+void areaofrectangle(int l,int b) {
+    printf("area of rectangle %d",l*b);
+}
+void areaoftriangle(int a,int h) {
+    printf("area of triangle %d",0.5*a*h);
+}
+void areaofsquare(int s) {
+    printf("area of square %d",s*s);
+}
+void main() {
+    printf("choose a number\n");
+    printf("1.cal area of circle\n");
+     printf("2.cal area of rectangle\n");
+      printf("3.cal area of triangle\n");
+       printf("4.cal area of square\n");
+       int choice;
+       scanf("%d",&choice);
+       switch (choice) {
+           case 1:
+                int r;
+                scanf("%d",&r);
+                areaofcircle(r);
+                break;
+            case 2:
+                int l,b;
+                scanf("%d%d",&l,&b);
+                areaofrectangle(l,b);
+                break;
+            case 3:
+                int a,h;
+                scanf("%d%d",&a,&h);
+                areaoftriangle(a,h);
+                break;
+            case 4:
+                int s;
+                scanf("%d",&s);
+                areaofsquare(s);
+                break;
+            default:
+            printf("wrong choice ! please enter a valid choice num! \n");
+                break;
+                
+       }
+    
+}
