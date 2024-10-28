@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char str1 [5]="date";
+    char str2 [5]="cted";
+    char temp;
+    for(int i=0;i<5;i++)
+    {
+        for(int j=i+1;j<5;j++)
+        {
+            if(str1[i]>str2[j])
+            {
+                temp = str1[i];
+                str1[i]=str2[j];
+                str2[j]=temp;
+                
+        }
+    }
+        for(int i=0;i<5;i++)
+    {
+        for(int j=i+1;j<5;j++)
+        {
+            if(str1[i]>str2[j])
+            {
+                temp = str1[i];
+                str1[i]=str2 [j];
+                 str2[j]=temp;
+            }
+        }
+    }
+    if(strcmp(str1,str2)==0)
+    printf("both strings are anagrams");
+    else
+    printf("both strings are not anagrams");
+    return 0;
+    
+}
+}
